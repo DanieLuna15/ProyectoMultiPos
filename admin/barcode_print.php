@@ -186,7 +186,7 @@ include ("left_sidebar.php") ;
                               echo 'checked';
                             }?>
 
-                            >Site name</label>&nbsp;&nbsp;&nbsp;
+                            >Nombre de Tienda</label>&nbsp;&nbsp;&nbsp;
                           <label><input type="checkbox" name="fields[product_name]" value="1" 
 
                             <?php if(isset($request->post['fields']['product_name']) && $request->post['fields']['product_name']) {
@@ -197,7 +197,7 @@ include ("left_sidebar.php") ;
                               echo 'checked';
                             }?>
 
-                            >Product name</label>&nbsp;&nbsp;&nbsp;
+                            >Nombre Producto</label>&nbsp;&nbsp;&nbsp;
                           <label><input type="checkbox" name="fields[price]" value="1" 
 
                             <?php if(isset($request->post['fields']['price']) && $request->post['fields']['price']) {
@@ -208,7 +208,7 @@ include ("left_sidebar.php") ;
                               echo 'checked';
                             }?>
 
-                            >Price</label>&nbsp;&nbsp;&nbsp;
+                            >Precio</label>&nbsp;&nbsp;&nbsp;
                           <label><input type="checkbox" name="fields[currency]" value="1" 
 
                             <?php if(isset($request->post['fields']['currency']) && $request->post['fields']['currency']) {
@@ -219,7 +219,7 @@ include ("left_sidebar.php") ;
                               echo 'checked';
                             }?>
 
-                            >Currency</label>&nbsp;&nbsp;&nbsp;
+                            >Divisa</label>&nbsp;&nbsp;&nbsp;
                           <label><input type="checkbox" name="fields[unit]" value="1" 
 
                             <?php if(isset($request->post['fields']['unit']) && $request->post['fields']['unit']) {
@@ -230,7 +230,7 @@ include ("left_sidebar.php") ;
                               echo '';
                             }?>
 
-                            >Unit</label>&nbsp;&nbsp;&nbsp;
+                            >¿Es Unidad?</label>&nbsp;&nbsp;&nbsp;
                           <label><input type="checkbox" name="fields[category]" value="1" 
 
                             <?php if(isset($request->post['fields']['category']) && $request->post['fields']['category']) {
@@ -241,7 +241,7 @@ include ("left_sidebar.php") ;
                               echo '';
                             }?>
 
-                            >Category</label>&nbsp;&nbsp;&nbsp;
+                            >Categoría</label>&nbsp;&nbsp;&nbsp;
                           <label><input type="checkbox" name="fields[product_image]" value="1" 
 
                             <?php if(isset($request->post['fields']['product_image']) && $request->post['fields']['product_image']) {
@@ -252,7 +252,7 @@ include ("left_sidebar.php") ;
                               echo 'checked';
                             }?>
 
-                            >Product Image</label>
+                            >Imagen del Producto</label>
                         </div>
                     </div>
                   </div>

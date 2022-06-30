@@ -15,9 +15,24 @@
         <?php echo trans('label_reference_no'); ?><i class="required">*</i>
       </label>
       <div class="col-sm-6">
-        <input type="text" class="form-control" id="reference_no" name="reference_no" autocomplete="off">
+
+        <div class="input-group">
+          <input type="text" name="reference_no" id="reference_no" class="form-control" autocomplete="off" required readonly>
+          <span class="input-group-addon pointer random_card_no">
+              <i class="fa fa-random"></i>
+          </span>
+          <span class="input-group-addon pointer" onClick="$('#reference_no').removeAttr('readonly').focus().select();">
+              <i class="fa fa-pencil"></i>
+          </span>
+        </div>
+
+
       </div>
     </div>
+
+
+
+
 
     <div class="form-group">
       <label for="purchase-note" class="col-sm-3 control-label">

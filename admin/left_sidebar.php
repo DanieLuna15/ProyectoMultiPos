@@ -362,14 +362,14 @@
                 </a>
               </li>
             <?php endif; ?>
-           <!-- <?php if (user_group_id() == 1 || has_permission('access', 'barcode_print')): ?>
+            <?php if (user_group_id() == 1 || has_permission('access', 'barcode_print')): ?>
               <li class="<?php echo current_nav() == 'barcode_print' ? ' active' : null; ?>">
                 <a href="barcode_print.php">
                   <svg class="svg-icon"><use href="#icon-barcode"></svg>
                   <?php echo trans('menu_barcode_print'); ?>
                 </a>
               </li>
-            <?php endif; ?>-->
+            <?php endif; ?>
             <?php if (user_group_id() == 1 || has_permission('access', 'read_category')): ?>
               <li class="<?php echo current_nav() == 'category' && !isset($request->get['box_state']) ? ' active' : null; ?>">
                 <a href="category.php">
@@ -386,14 +386,14 @@
                 </a>
               </li>
             <?php endif; ?>
-            <!--<?php if (user_group_id() == 1 || has_permission('access', 'import_product')): ?>
+            <?php if (user_group_id() == 1 || has_permission('access', 'import_product')): ?>
               <li class="<?php echo current_nav() == 'import_product' ? ' active' : null; ?>">
                 <a href="import_product.php">
                   <svg class="svg-icon"><use href="#icon-import"></svg>
                   <?php echo trans('menu_product_import'); ?>
                 </a>
               </li>
-            <?php endif; ?> -->
+            <?php endif; ?> 
             <?php if (user_group_id() == 1 || has_permission('access', 'read_stock_alert')): ?>
               <li class="<?php echo current_nav() == 'stock_alert' ? ' active' : null; ?>">
                 <a href="stock_alert.php">
@@ -1124,7 +1124,7 @@
                 </a>
               </li>
             <?php endif; ?>
-<!--
+
             <?php if (user_group_id() == 1 || has_permission('access', 'read_unit')) : ?>
               <li class="<?php echo current_nav() == 'unit' ? 'active' : null; ?>">
                 <a href="unit.php">
@@ -1134,7 +1134,7 @@
                   </span>
                 </a>
               </li>
-            <?php endif; ?> -->
+            <?php endif; ?> 
 
             <?php if (user_group_id() == 1 || has_permission('access', 'read_taxrate')) : ?>
               <li class="<?php echo current_nav() == 'taxrate' ? 'active' : null; ?>">

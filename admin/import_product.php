@@ -365,7 +365,7 @@ if (isset($request->post['submit']))
 
 							<div class="well well-small">
 								<div class="text-warning">
-									<div>La primera línea del archivo .xls descargado debe permanecer como está. No cambie el orden de las columnas. Asegúrese de que el archivo (*.xls) esté codificado en UTF-8. Las imágenes deben cargarse en la carpeta storage/products/ (o donde usted indicó). El sistema verificará que si existe una fila, actualice, si no existe, inserte.
+									<div>La primera línea del archivo .xls descargado debe permanecer como está. No cambie el orden de las columnas. Asegúrese de que el archivo (*.xls) esté codificado en UTF-8. Las imágenes deben cargarse en la carpeta storage/products/ (o donde usted indicó). El sistema verificará que si existe una fila, la actualiza, si no existe, la inserta.
 									</div>
 								</div>
 							</div>
