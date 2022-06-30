@@ -238,19 +238,7 @@ if ($order_printer_ids) {
 										{{ totalPayable | formatDecimal:2 }}
 									</span>
 								</div>
-								<div id="salesman">
-									<input type="hidden" name="salesman_id" value="<?php echo user_id();?>">
-									<!--
-									<select id="salesman_id" name="salesman_id"> 
-										<option value=""><?php //echo trans('text_select_salesman');?></option>
-										<?php //foreach (get_salesmans() as $salesman) : ?>
-											<option value="<?php //echo $salesman['id']; ?>" <?php //echo store('salesman_id') == $salesman['id'] ? 'selected' : null; ?>>
-												<?php //echo $salesman['username']; ?>
-											</option>
-										<?php //endforeach; ?>
-									</select>
-									-->
-								</div>
+								
 								<a id="invoice-note" ng-click="addInvoiceNote()" data-note="" title="<?php echo trans('text_add_note'); ?>">
 
 									<span class="fa fa-fw fa-comments-o"></span>

@@ -67,6 +67,7 @@
               </a>
             </li>
           <?php endif; ?>
+
           <?php if (user_group_id() == 1 || has_permission('access', 'read_sell_return')) : ?>
             <li class="<?php echo (current_nav() == 'sell_return') ? 'active' : null; ?>">
               <a href="sell_return.php">
@@ -361,14 +362,14 @@
                 </a>
               </li>
             <?php endif; ?>
-            <?php if (user_group_id() == 1 || has_permission('access', 'barcode_print')): ?>
+           <!-- <?php if (user_group_id() == 1 || has_permission('access', 'barcode_print')): ?>
               <li class="<?php echo current_nav() == 'barcode_print' ? ' active' : null; ?>">
                 <a href="barcode_print.php">
                   <svg class="svg-icon"><use href="#icon-barcode"></svg>
                   <?php echo trans('menu_barcode_print'); ?>
                 </a>
               </li>
-            <?php endif; ?>
+            <?php endif; ?>-->
             <?php if (user_group_id() == 1 || has_permission('access', 'read_category')): ?>
               <li class="<?php echo current_nav() == 'category' && !isset($request->get['box_state']) ? ' active' : null; ?>">
                 <a href="category.php">
@@ -385,14 +386,14 @@
                 </a>
               </li>
             <?php endif; ?>
-            <?php if (user_group_id() == 1 || has_permission('access', 'import_product')): ?>
+            <!--<?php if (user_group_id() == 1 || has_permission('access', 'import_product')): ?>
               <li class="<?php echo current_nav() == 'import_product' ? ' active' : null; ?>">
                 <a href="import_product.php">
                   <svg class="svg-icon"><use href="#icon-import"></svg>
                   <?php echo trans('menu_product_import'); ?>
                 </a>
               </li>
-            <?php endif; ?>
+            <?php endif; ?> -->
             <?php if (user_group_id() == 1 || has_permission('access', 'read_stock_alert')): ?>
               <li class="<?php echo current_nav() == 'stock_alert' ? ' active' : null; ?>">
                 <a href="stock_alert.php">
@@ -1045,7 +1046,7 @@
                 </ul>
               </li>
             <?php endif; ?>
-
+            <!-- 
             <?php if (user_group_id() == 1 || has_permission('access', 'receipt_template')) : ?>
               <li class="<?php echo current_nav() == 'receipt_template' ? 'active' : null; ?>">
                 <a href="receipt_template.php?template_id=<?php echo get_preference('receipt_template') ? get_preference('receipt_template') : 1;?>">
@@ -1066,7 +1067,7 @@
                   </span>
                 </a>
               </li>
-            <?php endif; ?>
+            <?php endif; ?>-->
 
             <?php if (user_group_id() == 1 || has_permission('access', 'read_brand')) : ?>
               <li class="treeview<?php echo current_nav() == 'brand' || current_nav() == 'brand_profile' ? ' active' : null; ?>">
@@ -1101,7 +1102,7 @@
                 </ul>
               </li>
             <?php endif; ?>
-
+ <!-- 
             <?php if (user_group_id() == 1 || has_permission('access', 'read_currency')) : ?>
               <li class="<?php echo current_nav() == 'currency' ? 'active' : null; ?>">
                 <a href="currency.php">
@@ -1111,7 +1112,7 @@
                   </span>
                 </a>
               </li>
-            <?php endif; ?>
+            <?php endif; ?> -->
 
             <?php if (user_group_id() == 1 || has_permission('access', 'read_pmethod')) : ?>
               <li class="<?php echo current_nav() == 'pmethod' ? 'active' : null; ?>">
@@ -1123,7 +1124,7 @@
                 </a>
               </li>
             <?php endif; ?>
-
+<!--
             <?php if (user_group_id() == 1 || has_permission('access', 'read_unit')) : ?>
               <li class="<?php echo current_nav() == 'unit' ? 'active' : null; ?>">
                 <a href="unit.php">
@@ -1133,7 +1134,7 @@
                   </span>
                 </a>
               </li>
-            <?php endif; ?>
+            <?php endif; ?> -->
 
             <?php if (user_group_id() == 1 || has_permission('access', 'read_taxrate')) : ?>
               <li class="<?php echo current_nav() == 'taxrate' ? 'active' : null; ?>">
@@ -1145,7 +1146,7 @@
                 </a>
               </li>
             <?php endif; ?>
-
+<!--
             <?php if (user_group_id() == 1 || has_permission('access', 'read_box')) : ?>
               <li class="<?php echo current_nav() == 'box' ? 'active' : null; ?>">
                 <a href="box.php">
@@ -1155,7 +1156,7 @@
                   </span>
                 </a>
               </li>
-            <?php endif; ?>
+            <?php endif; ?>-->
 
             <?php if (user_group_id() == 1 || has_permission('access', 'read_printer')) : ?>
               <li class="<?php echo current_nav() == 'printer' ? 'active' : null; ?>">
@@ -1167,7 +1168,7 @@
                 </a>
               </li>
             <?php endif; ?>
-
+<!--
             <?php if (user_group_id() == 1 || has_permission('access', 'read_language')) : ?>
               <li class="<?php echo current_nav() == 'language' ? 'active' : null; ?>">
                 <a href="language.php?lang=en">
@@ -1177,7 +1178,7 @@
                   </span>
                 </a>
               </li>
-            <?php endif; ?>
+            <?php endif; ?>-->
 
             <?php if ((user_group_id() == 1 || has_permission('access', 'backup') || has_permission('access', 'restore')) && !DEMO) : ?>
               <li class="<?php echo current_nav() == 'backup_restore' ? 'active' : null; ?>">

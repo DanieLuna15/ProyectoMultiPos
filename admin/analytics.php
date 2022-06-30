@@ -68,18 +68,18 @@ include ("left_sidebar.php");
     <?php endif; ?>
 
     <div class="row">
-      <div class="col-md-4 col-sm-4 col-xs-12">
+      <div class="col-md-3 col-sm-4 col-xs-12">
         <?php include('../_inc/template/partials/top_products.php'); ?>
       </div> 
       
-      <!--<div class="col-md-3 col-sm-3 col-xs-12">
+      <div class="col-md-3 col-sm-3 col-xs-12">
         <?php include('../_inc/template/partials/top_customers.php'); ?>
-      </div>-->
+      </div>
     
-      <div class="col-md-4 col-sm-4 col-xs-12">
+      <div class="col-md-3 col-sm-4 col-xs-12">
         <?php include('../_inc/template/partials/top_suppliers.php'); ?>
       </div> 
-      <div class="col-md-4 col-sm-4 col-xs-12">
+      <div class="col-md-3 col-sm-4 col-xs-12">
         <?php include('../_inc/template/partials/top_brands.php'); ?>
       </div>  
     </div>
