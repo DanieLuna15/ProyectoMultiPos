@@ -1,9 +1,5 @@
-# Modern POS - Point of Sale with Stock Management System
-
-## Designed and Developed by ITSolution24.com
-
-## itsolution24bd@gmail.com
-## Contact +8801737346122
-
-
-## Exclusively on Evanto Codecanyon
+# Punto de Venta con Sistema de Gestión de Stock
+# Actualmente esta en la version 1.0.0
+## Diseñado y desarrollado por Daniel Luna
+## danilunajose123@gmail.com
+## Contacto +59163192980
