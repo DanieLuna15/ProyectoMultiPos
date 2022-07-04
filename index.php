@@ -302,7 +302,7 @@ if ($request->server['REQUEST_METHOD'] == 'POST' && $request->get['action_type']
 
         <button type="submit" id="login-btn" class="btn btn-success btn-block btn-flat" data-loading-text="Logging...">
           <i class="fa fa-fw fa-sign-in"></i> 
-          <?php echo trans('button_sign_in'); ?>
+          <?php echo ('Iniciar Sesión'); ?>
         </button>
       </form>
       <?php if(DEMO) : ?>
@@ -327,7 +327,7 @@ if ($request->server['REQUEST_METHOD'] == 'POST' && $request->get['action_type']
           <br>
           <p class="text-center">
             <a href="#forgotPasswordModal" data-toggle="modal" data-target="#forgotPasswordModal" title="<?php echo trans('text_forgot_password'); ?>" class="text-danger">
-              <?php echo trans('text_forgot_password'); ?>
+              <?php echo ('¿Olvidaste tu Contraseña?'); ?>
             </a>
           </p>
         </div>

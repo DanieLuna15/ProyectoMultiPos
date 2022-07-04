@@ -207,7 +207,7 @@ $tab_active = isset($request->get['tab']) ? $request->get['tab'] : 'general';
               <select id="barcode_symbology" class="form-control select2" name="barcode_symbology" required>
                 <option value="code25" selected>code25</option>
                 <option value="code39">code39</option>
-                <option value="code128" selected>code128</option>
+                <!--<option value="code128" selected>code128</option>-->
                 <option value="ean5">ean5</option>
                 <option value="ean13">ean13</option>
                 <option value="upca">upca</option>

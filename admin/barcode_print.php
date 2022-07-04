@@ -219,7 +219,7 @@ include ("left_sidebar.php") ;
                               echo 'checked';
                             }?>
 
-                            >Divisa</label>&nbsp;&nbsp;&nbsp;
+                            >Moneda</label>&nbsp;&nbsp;&nbsp;
                           <label><input type="checkbox" name="fields[unit]" value="1" 
 
                             <?php if(isset($request->post['fields']['unit']) && $request->post['fields']['unit']) {
@@ -363,7 +363,7 @@ include ("left_sidebar.php") ;
                             </div>
                           <?php endif;?>
                           <span class="barcode_image" style="margin-top:5px;">
-                              <img src="data:image/png;base64,<?php echo base64_encode($generator->getBarcode($product['p_code'], $symbology, 1));?>" alt="</php echo $product['p_code'];?>" class="bcimg">
+                              <img class="bcimg" src="data:image/png;base64,<?php echo base64_encode($generator->getBarcode($product['p_code'], $symbology, 1)); ?>" height="30" alt="</php echo $product['p_code'];?>">
                           </span>
                         </div>
                       </div>
