@@ -99,7 +99,7 @@
             </a>
           </li>
         <?php endif; ?>
-        <!--
+        
         <?php if (user_group_id() == 1 || has_permission('access', 'read_user_preference')) : ?>
           <li id="user-preference" class="user user-menu<?php echo current_nav() == 'user_preference' ? ' active' : null; ?> sell-btn">
             <a href="user_preference.php?store_id=<?php echo store_id(); ?>" title="<?php echo trans('text_user_preference'); ?>">
@@ -113,7 +113,7 @@
               <svg class="svg-icon"><use href="#icon-settings-<?php echo $user->getPreference('base_color', 'black'); ?>"></svg>
             </a>
           </li>
-        <?php endif; ?>-->
+        <?php endif; ?>
         <?php if (user_group_id() == 1 || has_permission('access', 'read_stock_alert')) : ?>
           <li class="user user-menu<?php echo current_nav() == 'stock_alert' ? ' active' : null; ?>">
             <a href="stock_alert.php" title="<?php echo trans('text_stock_alert'); ?>">
@@ -146,12 +146,12 @@
             <span class="fa fa-fw fa-expand"></span>
           </a>
         </li>
-        <!--
+        
         <li id="scrolling-sidebar" class="user user-menu">
           <a href="#" title="<?php echo trans('text_reports'); ?>" data-toggle="scrolling-sidebar" data-width="350">
             <i class="fa fa-square"></i>
           </a>
-        </li> -->
+        </li> 
         <li id="screen-lock" class="user user-menu">
           <a href="../lockscreen.php" title="<?php echo trans('text_lockscreen'); ?>">
             <i class="fa fa-lock"></i>
