@@ -724,7 +724,7 @@
             <?php endif; ?>
           </ul>
         </li>
-      <?php endif; ?>
+      <?php endif; ?>-->
 
       <li class="treeview<?php echo current_nav() == 'report_overview' || current_nav() == 'report_collection' || current_nav() == 'report_customer_due_collection' || current_nav() == 'report_supplier_due_paid' || current_nav() == 'report_sell_itemwise' || current_nav() == 'report_sell_categorywise' || current_nav() == 'report_sell_supplierwise' || current_nav() == 'report_purchase_itemwise' || current_nav() == 'report_purchase_categorywise' || current_nav() == 'report_purchase_supplierwise' || current_nav() == 'report_sell_payment' || current_nav() == 'report_purchase_payment' || current_nav() == 'report_sell_tax' || current_nav() == 'report_purchase_tax' || current_nav() == 'report_tax_overview' || current_nav() == 'report_stock'  ? ' active' : null; ?>">
         <?php if(user_group_id() == 1 || has_permission('access', 'read_overview_report') || has_permission('access', 'read_collection_report') || has_permission('access', 'read_customer_due_collection_report') || has_permission('access', 'read_supplier_due_paid_report') || has_permission('access', 'read_sell_report') || has_permission('access', 'read_purchase_report') || has_permission('access', 'read_sell_payment_report') || has_permission('access', 'read_purchase_payment_report') || has_permission('access', 'read_sell_tax_report') || has_permission('access', 'read_purchase_tax_report') || has_permission('access', 'read_tax_overview_report') || has_permission('access', 'read_stock_report')): ?>
@@ -815,7 +815,7 @@
             </li>
           <?php endif; ?>
 
-          <?php if (user_group_id() == 1 || has_permission('access', 'read_sell_tax_report')) : ?>
+          <!--<?php if (user_group_id() == 1 || has_permission('access', 'read_sell_tax_report')) : ?>
             <li class="<?php echo current_nav() == 'report_sell_tax' ? 'active' : null; ?>">
               <a href="report_sell_tax.php">
                 <svg class="svg-icon"><use href="#icon-report"></svg>
@@ -846,7 +846,7 @@
                 </span>
               </a>
             </li>
-          <?php endif; ?>
+          <?php endif; ?>-->
 
           <?php if (user_group_id() == 1 || has_permission('access', 'read_stock_report')) : ?>
             <li class="<?php echo current_nav() == 'report_stock' ? 'active' : null; ?>">
@@ -859,7 +859,7 @@
             </li>
             <?php endif; ?>
         </ul>
-      </li>-->
+      </li>
 
       <?php if (user_group_id() == 1 || has_permission('access', 'read_analytics')) : ?>
         <li class="<?php echo current_nav() == 'analytics' ? 'active' : null; ?>">

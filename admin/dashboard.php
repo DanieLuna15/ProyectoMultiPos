@@ -195,7 +195,7 @@ include ("left_sidebar.php");
     <?php endif;?>
     <?php endif;?>
 
-    <!-- Accounting Start -->
+    
     <!--<?php if (user_group_id() == 1 || has_permission('access', 'read_dashboard_accounting_report')) : ?>
     <div class="row">
       <div class="col-md-12">
@@ -295,7 +295,7 @@ include ("left_sidebar.php");
         </div>
       </div>
     </div>
-    <?php endif; ?>  -->
+    <?php endif; ?>-->
     <!-- Accounting End -->
 
     <hr>

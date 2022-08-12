@@ -33,5 +33,5 @@
       <div class="progress-bar progress-bar-success" style="width: <?php echo ($received_amount/$invoice_amount)*100;?>%"></div>
     </div>
   </div>
-  <a href="<?php root_url();?>/admin/report_overview.php" class="btn btn-sm btn-block btn-warning btn-flat"><?php echo trans('button_overview_report'); ?> &rarr;</a>
+  <!--<a href="<?php root_url();?>/admin/report_overview.php" class="btn btn-sm btn-block btn-warning btn-flat"><?php echo trans('button_overview_report'); ?> &rarr;</a>-->
 </div>

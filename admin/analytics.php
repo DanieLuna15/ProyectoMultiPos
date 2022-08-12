@@ -87,16 +87,16 @@ include ("left_sidebar.php");
     <div class="box">
     <div class="box-body">
     <div class="row">
-      <div class="col-md-12">
+      <div class="col-md-8">
         <?php include ROOT.'/_inc/template/partials/report_cashbook_summary.php';?>
         <div class="details text-center mt-5">
           <a href="report_cashbook.php"><?php echo trans('button_details');?> &rarr;</a>
         </div>
       </div>
 
-      <!--<div class="col-md-5"">
+     <div class="col-md-4"">
         <?php include ROOT.'/_inc/template/partials/progress_group.php';?>
-      </div>-->
+    </div>
     </div>
     </div>
     </div>

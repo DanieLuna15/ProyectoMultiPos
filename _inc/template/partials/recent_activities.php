@@ -52,7 +52,7 @@
     <?php if (user_group_id() == 1 || has_permission('access', 'read_sell_list')) : ?>
     <div class="tab-pane<?php if(!$active_activity_content) { echo ' active'; $active_activity_content = true;}?>" id="sales">
       <div class="row">
-        <div class="col-lg-12 col-xs-12">
+        <div class="col-lg-8 col-xs-12">
           <div class="box box-default banking-box mb-0">
             <div class="box-body">
               <div class="table-responsive" style="min-height:166px">
@@ -71,11 +71,11 @@
 
           </div>
         </div>
-        <!--
+        
         <div class="col-lg-4 col-xs-12" style="padding-right: 15px">
           <?php include ROOT.'/_inc/template/partials/progress_group.php';?>
         </div>
-              -->
+            
       </div>
     </div>
     <?php endif;?>
